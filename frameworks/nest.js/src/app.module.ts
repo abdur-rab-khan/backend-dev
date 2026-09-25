@@ -8,6 +8,7 @@ import { ConfigModule } from './modules/config.module';
 
 @Module({
   // 🔶 Import is about importing other modules into this module, so that their providers can be used in this module.
+  // 🔶 It's mostly used to use the exported providers from other modules.
   imports: [UserModule, MoviesModule, ConfigModule],
   controllers: [AppController],
   // 🔶 Registers AppService as a provider in the Dependency Injection (DI) container.

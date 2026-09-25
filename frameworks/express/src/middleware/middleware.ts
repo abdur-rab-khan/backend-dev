@@ -14,7 +14,7 @@ const router = Router();
 */
 
 // Logger for only middleware route and it will going to run on every request hit on "app.use("/middleware", middleware)"
-router.use((req, res, next) => {
+router.use((req, _, next) => {
   logger.log(
     `[ Middleware Route ]: Request happened at ${Date.now()} on ${req.path}`,
   );

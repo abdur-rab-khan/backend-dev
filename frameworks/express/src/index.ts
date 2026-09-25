@@ -1,4 +1,4 @@
-import express from "express";
+import express, { type NextFunction, type Request } from "express";
 // import "./logger";
 
 const app = express();
